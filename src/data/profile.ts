@@ -9,17 +9,20 @@ export type LinkItem = {
   id: string;
   title: string;
   url: string;
+  /** 제목 앞 아이콘: 이모지 문자, 또는 "/"로 시작하는 public 폴더 이미지 경로 */
+  icon?: string;
 };
 
 // TODO: 아래는 보여 주기용 더미 값입니다. 실제 내용으로 교체하세요.
 export const profile: Profile = {
   name: "김광우",
   bio: "김도연 남편",
-  image: "/profile.svg",
+  image: "/profile.jpg",
 };
 
 export const links: LinkItem[] = [
-  { id: "github", title: "GitHub", url: "https://github.com/your-id" },
-  { id: "linkedin", title: "LinkedIn", url: "https://www.linkedin.com/in/your-id" },
-  { id: "blog", title: "Blog", url: "https://your-blog.example.com" },
+  { id: "github", title: "깃허브", url: "https://github.com/jabreenjoe", icon: "🐱" },
+  { id: "blog", title: "블로그", url: "https://blog.naver.com/kims9292", icon: "🟢" },
+  { id: "email", title: "이메일", url: "mailto:kims9292@naver.com", icon: "📮" },
+  { id: "food", title: "맛집", url: "https://blog.naver.com/yamyammii", icon: "/yamyam.png" },
 ];
